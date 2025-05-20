@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Guessing game </title>
+</head>
+<body>
+    <header>
+        <h1 id='headerheadertag'> Welcome to the guessing game</h1>
+    </header>
+    <main id="gridcontainer">
+        <article id="maintext">
+            In this game , your goal is to get the right result of a number, from 1 through 10. <br>
+            If you get it right, my congratulations , you have passsed the game, if not, well, try it one more time ! <br>
+            Dont worry , a message will be displayed at the end of the screen alongside with your result.
+        </article>
+        <section id="maincontent">
+            <h1 id="mainheadertag"> Insert your Guess: </h1> <br>
+            <form action="/" method="POST">
+                <input type="text" placeholder="Your Guess" name="guess"> 
+                <button type="submit" id="submit"> Send Guess </button>
+            </form>
+            {%if message %}
+                <p id="resultdisplay"> {{ message }}</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>
