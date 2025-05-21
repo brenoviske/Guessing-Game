@@ -30,7 +30,7 @@ header {
 #maintext {
     text-align: center;
     padding: 10px;
-    font-size: 25px;
+    font-size:30px;
     font-family: system-ui;
     font-weight: lighter;
 }
@@ -51,7 +51,7 @@ header {
 
 input {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: system-ui;
     padding: 10px;
     border-radius: 10px;
@@ -65,7 +65,7 @@ input {
     text-align: center;
     background-color: black;
     font-family: system-ui;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-shadow: 1px 1px 10px black;
     border: none;
@@ -77,7 +77,7 @@ input {
 #resultdisplay{
     
     font-family: system-ui;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: lighter;
 
 }
@@ -107,7 +107,9 @@ input {
         font-size: 15px;
     }
     #resultdisplay {
-        font-size: 15px;
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
 }
@@ -139,20 +141,49 @@ input {
 /* Para dispositivos de médio porte */
 
 @media screen and (min-width:450px) and (max-width: 1080px) {
+
+    #headerheadertag{
+        font-size: 30px;
+    }
     #maintext{
-        font-size: 40px;
+        font-size: 30px;
     }
     #mainheadertag {
-        font-size: 40px;
+        font-size: 30px;
     }
     input{
-        font-size: 40px;
+        font-size: 35px;
     }
     #submit{
-        font-size: 40px;
+        font-size: 35px;
     }
     #resultdisplay {
-        font-size: 40px;
+        font-size: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
+/* Para dispositivos grandes */
+
+@media screen and (min-width:1080px) and (max-width:3000px){
+    #headerheadertag{
+        font-size: 30px;
+    }
+    #mainheadertag{
+        font-size: 30px;
+    }
+    #maintext {
+        font-size: 30px;
+    }
+    input {
+        font-size: 25px;
+    }
+    #submit{
+        font-size: 25px;
+    }
+    #resultdisplay{
+        font-size: 30px;
+        padding: 10px;
+    }
+}
